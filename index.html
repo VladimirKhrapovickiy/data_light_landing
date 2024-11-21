@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Light</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+            <img src="./icons/logo.svg" alt="логотип" class="logo col col-lg-3 col-3">
+            <nav class="nav-menu col col-lg-6 d-md-none d-lg-block d-sm-none d-none">
+                <ul class="nav-menu__list d-flex justify-content-between align-items-center">
+                    <li class="nav-menu__item"><a href="#services" class="nav-menu__link"> Наши услуги</a></li>
+                    <li class="nav-menu__item"><a href="#advantages" class="nav-menu__link">Преимущества</a></li>
+                    <li class="nav-menu__item"><a href="#cases" class="nav-menu__link">О компании</a></li>
+                    <li class="nav-menu__item"><a href="#feedback" class="nav-menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="colcol col-lg-3 align-self-end d-flex justify-content-between col-md-4 col-sm-5 col-8 align-items-center">
+                <img src="./icons/call.svg" alt="телефонная трубка" class="call-ico ">
+                <button class="btn btn-green_grad-small get-call">Связаться <img src="./icons/arrow-right.svg" alt="" class="arrow_rigth"></button>
+            </div>
+        </div>
+    </header>
+    <div class="popup">
+        <div class="popup__container d-flex flex-column align-items-center">
+            <div class="popup__close"></div>
+            <h3 class="popup__title">Закажите консультацию</h3>
+            <span>наши специалисты свяжутся с вами в ближайшее время</span>
+            <form action="post" class="popup__form d-flex flex-wrap align-items-center justify-content-around">
+                <input type="text" class="popup__input" placeholder="Ваше имя">
+                <input type="tel" class="popup__input" placeholder="Ваш телефон">
+                <button type="submit" class="btn btn-black-big feedback__submit">Отправить заявку <img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></button>
+            </form>
+        </div>
+    </div>
+    <section class="main-screen container">
+        <div class="row d-flex justify-content-between">
+            <div class="main-screen__left col-lg-6 d-flex flex-column col-md-6 col-sm-6 col-xs-12">
+                <h1 class="gradient_green-blue">DATA LIGHT</h1>
+                <h4>подготовим данные для машинного обучения</h4>
+                <div class="main-screen__services d-flex flex-wrap">
+                    <div class="main-screen__service">Сбор и разметка любых данных</div>
+                    <div class="main-screen__service">Готовые датасеты</div>
+                    <div class="main-screen__service">Синтетические данные</div>
+                    <div class="main-screen__service">Модерация</div>
+                </div>
+                <button class="btn btn-green_grad-big">Оставить заявку <img src="./icons/arrow-right.svg" alt="" class="arrow_rigth"></button>
+            </div>
+            <div class="main-screen__right col-lg-6 position-relative col-md-6 col-sm-6 col-xs-12">
+                <img src="./icons/sun_ico.svg" alt="иконка в виде солнца" class="sun-1"> 
+                <img src="./icons/sun_ico.svg" alt="иконка в виде солнца" class="sun-2">
+                <img src="./img/main_screen_img.png" alt="чип с мозгом" class="main-pic">
+                <img src="./img/Ellipse 2.png" alt="свет" class="light-1">
+                <img src="./img/Ellipse 3.png" alt="свет" class="light-2">
+            </div>
+        </div>
+        <div class="main-screen__partners d-flex justify-content-between flex-wrap">
+            <img src="./img/University-of-Zurich.png" alt="" class="main-screen__partner">
+            <img src="./img/supersmart.png" alt="" class="main-screen__partner">
+            <img src="./img/Unilever.png" alt="" class="main-screen__partner">
+            <img src="./img/SmartMicro.png" alt="" class="main-screen__partner">
+            <img src="./img/Twiggle.png" alt="" class="main-screen__partner">
+            <img src="./img/optimal.png" alt="" class="main-screen__partner">
+            <img src="./img/Image-Biopsy-Lab.png" alt="" class="main-screen__partner">
+            <img src="./img/Marss.png" alt="" class="main-screen__partner">
+            <img src="./img/olameter.png" alt="" class="main-screen__partner">
+        </div>
+    </section>
+    <section class="services container" id="services">
+        <h2 class="services__title">Наши услуги</h2>
+        <div class="row d-flex flex-wrap justify-content-between" >
+            <div class="service service-modaration service-yellow-blue col-lg-3">
+                <div class="service__info">
+                    <h3 class="service__title">Модерация контента</h3>
+                    <p class="service__text">Контроль и управление информацией на платформе или в сообществе. Это включает проверку на соответствие правилам, удаление нежелательного контента и обеспечение безопасности пользователей.</p>
+                </div>
+            </div>
+            <div class="service service-markup green-border col-lg-6 d-flex text-white justify-content-between fadeinright">
+                <div class="border-wrapper d-flex">
+                    <div class="service__info">
+                        <h3 class="service__title">Разметка данных</h3>
+                        <p class="service__text">Процесс присвоения или добавления меток к данным, чтобы они стали понятными для компьютерных систем. Эти метки могут указывать на определенные характеристики или категории данных, что облегчает их анализ, классификацию и использование в машинном обучении.
+                        </p>
+                    </div>
+                    <img src="./img/AI Icon (21).png" alt="" class="service__img">
+                </div>
+            </div>
+            <div class="service service-data-collection service-yellow-blue col-lg-3 d-flex fadeinright">
+                <div class="service__info">
+                    <h3 class="service__title">Сбор данных</h3>
+                    <p class="service__text">В проектах машинного обучения сбор данных предшествует таким этапам, как очистка и предварительная подготовка данных, обучение и тестирование модели, принятие решений на основе результатов работы модели.</p>
+                </div>
+            </div>
+            <div class="service service-sintetic-data service-yellow-blue col-lg-6 d-flex justify-content-between fadeinleft">
+                <div class="service__info">
+                    <h3 class="service__title">Синтетические данные</h3>
+                    <p class="service__text">Создаются компьютерными программами для имитации реальных данных. Их применяют для тестирования, обучения моделей машинного обучения и других целей, когда реальные данные недоступны или непригодны.
+                    </p>
+                </div>
+                <img src="./img/brain.png" alt="" class="service__img">
+            </div>
+            <div class="service service-datasets green-border col-lg-6 d-flex text-white justify-content-between fadeinright">
+                <div class="border-wrapper d-flex">
+                    <div class="service__info">
+                        <h3 class="service__title">Датасеты</h3>
+                        <p class="service__text">В проектах машинного обучения сбор данных предшествует таким этапам, как очистка и предварительная подготовка данных, обучение и тестирование модели, принятие решений на основе результатов работы модели.</p>
+                        <p class="service__advantage">25+ готовых лицензий</p>
+                    </div>
+                    <img src="./img/geometry.png" alt="" class="service__img">
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-black-big me-auto ms-auto"><a href="#">Все услуги</a><img src="./icons/arrow-right-white.svg" alt="" class="arrow_rigth"></button>
+    </section>
+    <section class="advantages container" id="advantages">
+        <h2 class="advantages__title">Преимущества</h2>
+        <div class="advantages__list row d-flex flex-wrap align-items-center justify-content-between">
+            <div class="advantage  advantage-years col-lg-3 col-md-3 col-5">
+                <p class="outline text-big count">10</p>
+                <p class="text-small">лет на рынке</p>
+            </div>
+            <div class="advantage appear advantage-projects col-lg-3 col-md-4 col-7">
+                <p class="outline text-big"><span class="count">650</span>+</p>
+                <p class="text-small">завершенных проектов</p>
+            </div>
+            <div class="advantage appear advantage-block col-lg-3 green-border col-md-5 col-sm-6">
+                <div class="border-wrapper">
+                    <p class="advantage__name">Штатные сотрудники</p>
+                    <img src="./icons/Hierarchy.svg" alt="иерархия" class="advantage__ico">
+                </div>
+            </div>
+            <div class="advantage appear advantage-block col-lg-3 green-border col-md-6 col-sm-6">
+                <div class="border-wrapper">
+                    <p class="advantage__name">Скорость и качество</p>
+                    <img src="./icons/Winner Trophy.svg" alt="кубок" class="advantage__ico">
+                </div>
+            </div>
+            <div class="advantage appear advantage-staff col-lg-3 col-md-6 col-sm-6">
+                <p class="outline text-big"><span class="count">1500</span>+</p>
+                <p class="text-small">штатных асессоров</p>
+                <button class="btn btn-green_grad-big">Оставить заявку <img src="./icons/arrow-right.svg" alt="стрелка вправо" class="arrow_rigth"></button>
+            </div>
+            <div class="advantage appear advantage-block col-lg-3 green-border col-md-6 col-sm-6">
+                <div class="border-wrapper">
+                    <p class="advantage__name">Бесплатное пилотирование</p>
+                    <img src="./icons/Secure Shield.svg" alt="щит" class="advantage__ico">
+                </div>
+            </div>
+            <div class="advantage appear advantage-block col-lg-3 green-border col-md-6 col-sm-6">
+                <div class="border-wrapper">
+                    <p class="advantage__name">Экспертиза в разных индустриях</p>
+                    <img src="./icons/Secure Shield.svg" alt="щит" class="advantage__ico">
+                </div>
+            </div>
+            <div class="advantage appear advantage-block col-lg-3 green-border col-md-6 col-sm-6">
+                <div class="border-wrapper">
+                    <p class="advantage__name">Контроль качества на каждом проекте</p>
+                    <img src="./icons/Magnifier.svg" alt="увеличительное стекло" class="advantage__ico">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stages" id="stages">
+        <div class="container">
+            <h2 class="stages__title">Этапы работ</h2>
+            <img src="./img/stages_shema.png" alt="схема эапов работ" class="stages__img opacity">
+        </div>
+    </section>
+    <section class="cases container" id="cases">
+        <h2 class="cases__title">Наши кейсы</h2>
+        <div class="cases__list row d-flex d-flex flex-wrap align-items-center justify-content-between">
+            <div class="case col-lg-6 d-flex">
+                <div class="case__left">
+                    <img src="./img/Frame 1739.png" alt="скриншот программы" class="case__img">
+                </div>
+                <div class="case__right d-flex flex-column">
+                    <h4 class="case__title">Разметка аудио для call-центра</h4>
+                    <p class="case__text">Технологии NLP оптимизировали рабочий процесс call-центра и сократили количество нарушений со стороны операторов</p>
+                    <a href="#" class="case__btn justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+            <div class="case col-lg-6 d-flex">
+                <div class="case__left">
+                    <img src="./img/Frame 1740.png" alt="кадр из видео" class="case__img">
+                </div>
+                <div class="case__right d-flex flex-column">
+                    <h4 class="case__title">Разметка видео для видеосистем</h4>
+                    <p class="case__text">Сотрудничество улучшило показатели нейронной сети для отслеживания людей в помещении по видео на 14%</p>
+                    <a href="#" class="case__btn justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+            <div class="case col-lg-6 d-flex">
+                <div class="case__left">
+                    <img src="./img/Frame 1741.png" alt="дицо" class="case__img">
+                </div>
+                <div class="case__right d-flex flex-column">
+                    <h4 class="case__title">Система распознавания лиц</h4>
+                    <p class="case__text">Для обеспечения безопасности на станциях метро было проанализировано 10 тысяч кадров</p>
+                    <a href="#" class="case__btn justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+            <div class="case col-lg-6 d-flex">
+                <div class="case__left d-flex flex-column">
+                    <img src="./img/Frame 1742.png" alt="таблица" class="case__img">
+                </div>
+                <div class="case__right d-flex flex-column">
+                    <h4 class="case__title">Разметка статей для СМИ</h4>
+                    <p class="case__text">Сотрудничество позволило Food.ru разметить 10.000 статей за один месяц и адаптировать материалы сайта к изменениям в законодательстве</p>
+                    <a href="#" class="case__btn justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-black-big me-auto ms-auto"><a href="#">Смотреть все кейсы</a><img src="./icons/arrow-right-white.svg" alt="" class="arrow_rigth"></button>
+    </section>
+    <section class="articles container" id="articles">
+        <h2 class="articles__title">Полезные материалы</h2>
+        <div class="row articles__list d-flex justify-content-between">
+            <div class="article d-flex flex-column col-lg-4">
+                <img src="./img/Frame 1743.png" alt="робот" class="article__img">
+                <div class="article__info d-flex flex-column justify-content-between">
+                    <p class="article__date">15 апреля 2024</p>
+                    <h4 class="article__title">Как эффективно управлять командами</h4>
+                    <p class="article__text">Управление проектами – это сложная задача, которая требует большого количества навыков. При этом опыт руководителя проявляется в том числе и в мелочах, которые позволяют выстраивать работу команды эффективнее. </p>
+                </div>
+                <div class="article__bottom-panel d-flex align-items-center">
+                    <div class="article__watch-count"><img src="./icons/solar_eye.svg" alt="иконка глаза"><span class="watch-count">132</span></div>
+                    <div class="article__like-count"><img src="./icons/heart.svg" alt="иконка сердца"><span class="like-count">15</span></div>
+                    <a href="#" class="d-flex justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+            <div class="article d-flex flex-column col-lg-4">
+                <img src="./img/Frame 1744.png" alt="скриншот экрана" class="article__img">
+                <div class="article__info d-flex flex-column justify-content-between">
+                    <p class="article__date">15 апреля 2024</p>
+                    <h4 class="article__title">Заменят ли нейросети работу дизайнера?</h4>
+                    <p class="article__text">Создать обложку или иллюстрацию, помочь в поиске вдохновения или заменить предмет на изображении — сейчас все это может сделать искусственный интеллект. </p>
+                </div>
+                <div class="article__bottom-panel d-flex align-items-center">
+                    <div class="article__watch-count"><img src="./icons/solar_eye.svg" alt="иконка глаза"><span class="watch-count">132</span></div>
+                    <div class="article__like-count"><img src="./icons/heart.svg" alt="иконка сердца"><span class="like-count">15</span></div>
+                    <a href="#" class="d-flex justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+            <div class="article d-flex flex-column col-lg-4">
+                <img src="./img/Frame 1745.png" alt="схема" class="article__img">
+                <div class="article__info d-flex flex-column justify-content-between">
+                    <p class="article__date">15 апреля 2024</p>
+                    <h4 class="article__title">Что такое датасеты и как они связаны с нейро сетями?</h4>
+                    <p class="article__text">В контексте искусственного интеллекта качественные датасеты играют определяющую роль в обучении нейронных сетей. Но как они создаются и как их можно правильно использовать? Чтобы разобраться глубже</p>
+                </div>
+                <div class="article__bottom-panel d-flex align-items-center">
+                    <div class="article__watch-count"><img src="./icons/solar_eye.svg" alt="иконка глаза"><span class="watch-count">132</span></div>
+                    <div class="article__like-count"><img src="./icons/heart.svg" alt="иконка сердца"><span class="like-count">15</span></div>
+                    <a href="#" class="d-flex justify-content-between align-items-center">Подробнее<img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></a>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-black-big me-auto ms-auto"><a href="#">Читать все</a><img src="./icons/arrow-right-white.svg" alt="" class="arrow_rigth"></button>
+    </section>
+    <section class="feedback container" id="feedback">
+        <div class="row d-flex">
+            <div class="feedback__left col-lg-7">
+                <h2 class="feedback__title">Оставьте заявку</h2>
+                <p class="feedback__slogan">Мы обязательно свяжемся с Вами!</p>
+                <form action="" class="feedback__form d-flex flex-wrap">
+                    <input type="text" class="feedback__input feedback__input-name" placeholder="Имя">
+                    <input type="email" class="feedback__input feedback__input-email" placeholder="E-mail">
+                    <input type="tel" class="feedback__input feedback__input-phone" placeholder="Телефон">
+                    <input type="text" class="feedback__input feedback__input-jobtitle" placeholder="Должность">
+                    <input type="text" list="input__services" class="feedback__input feedback__input-services" name="services" placeholder="Интересующая услуга">
+                        <datalist id="input__services">
+                            <option value="Модерация контента"></option>
+                            <option value="Разметка данных"></option>
+                            <option value="Сбор данных"></option>
+                            <option value="Синтетические данные"></option>
+                            <option value="Датасеты"></option>
+                        </datalist>
+                    <textarea name="project_info" class="feedback__textarea" placeholder="Информация о проекте"></textarea>
+                    <div class="feedback__bottom-form-container d-flex">
+                        <button type="submit" class="btn btn-black-big feedback__submit">Отправить заявку <img src="./icons/arrow-right-white.svg" alt="стрелка" class="arrow_rigth"></button>
+                        <p class="feedback__policy">Нажимая кнопку “Оставить заявку” я даю согласие на отправку и обработку своих персональных данных</p>
+                    </div>
+                </form>
+            </div>
+            <div class="feedback__right col-lg-5 d-flex align-items-end">
+                <img src="./img/woman_stock.png" alt="мария sales менеджер" class="feedback__image">
+            </div>
+        </div>
+    </section>
+    <footer class="container footer">
+        <div class="row d-flex justify-content-between">
+            <img src="./icons/logo.svg" alt="логотип" class="footer__logo align-self-start  col-sm-2 col-10">
+            <div class="footer__menu footer__menu-services col-lg-2 col-md-5 col-sm-5 col-6">
+                <span class="services__name">Наши решения</span>
+                <ul class="services__list">
+                    <li class="services__item">Модерация контента</li>
+                    <li class="services__item">Разметка данных</li>
+                    <li class="services__item">Сбор данных</li>
+                    <li class="services__item">Синтетические данные</li>
+                    <li class="services__item">Датасеты</li>
+                </ul>
+            </div>
+            <div class="footer__menu footer__menu-page col-lg-2 col-md-5 col-sm-5 col-6">
+                <ul class="page__list d-flex flex-column justify-content-around">
+                    <li class="page__item"><a href="#advantages" class="page__link">Преимущества</a></li>
+                    <li class="page__item"><a href="#cases" class="page__link">О компании</a></li>
+                    <li class="page__item"><a href="#feedback" class="page__link">Контакты</a></li>
+                </ul> 
+            </div>
+            <div class="footer__contacts col-lg-4 d-flex flex-column align-items-end contacts col-md-12 col-sm-12">
+                <span class="contacts__number">+7 (495) 999-99-99</span>
+                <span class="contacts__email">info@datalight.ru</span>
+                <div class="contacts__social">
+                    <ul class="social__list d-flex align-items-center justify-content-between">
+                        <li class="social__item"><a href="#" class="social__link"><img src="./icons/whatup.svg" alt="whatsup" class="spocial__logo"></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><img src="./icons/vk.svg" alt="vkontakte" class="spocial__logo"></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><img src="./icons/telegramm.svg" alt="telegram" class="spocial__logo"></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><img src="./icons/instagram.svg" alt="instagram" class="spocial__logo"></a></li>
+                        <li class="social__item"><a href="#" class="social__link"><img src="./icons/youtube.svg" alt="youtube" class="spocial__logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__info d-flex flex-row justify-content-between col-lg-10">
+            <a href="#" class="footer__policy">Политика обработки персональных данных</a>
+            <a href="#" class="footer__oferta">Договор оферты</a>
+            <span class="footer__org-name">ООО “Дата Лайт” 2024</span>
+        </div>
+    </footer>
+<script src="js/main.min.js"></script>- 
+</body>
+</html>
